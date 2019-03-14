@@ -1,0 +1,321 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font: 12px/18px 'raleway', sans-serif;
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10%;
+}
+
+/* Text */
+
+h1 {
+    font-family: 'lora';
+    font-size: 4vw;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-bottom: ridge;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+h2 {
+    font-family: 'lora';
+    font-size: 2em;
+    padding: 2%;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+h3 {
+    font-family: 'raleway';
+    font-size: 1.5em;
+    padding: 2%;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: 'raleway';
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+h6 {
+    font-family: 'raleway';
+    font-size: 0.8em;
+    padding-left: 2%;
+}
+
+p {
+    font-family: 'raleway';
+    font-size: 1.2em;
+    padding: 2%;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+    background-color: white;
+    clear: both;
+    margin-bottom: 5%
+}
+
+
+/*navigation her*/
+
+
+.burger {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+#navigation-icon {
+    display: inline-block;
+    float: right;
+    padding-right: 2%;
+}
+
+#navigation-desktop {
+    display: none;
+}
+
+#navigation-mobile {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#navigation-mobile li {
+    padding: 0.8em;
+    border-bottom: 1px solid #ccc;
+}
+
+#navigation-mobile li a {
+    color: #000;
+    text-decoration: none;
+}
+
+#navigation-mobile li a:hover {
+    text-decoration: underline;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+main {
+    text-align: left;
+}
+
+img {
+    width: 90%;
+}
+
+#logo2 {
+    max-width: 60px;
+}
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer {
+    height: auto;
+    background: black;
+    text-align: right;
+    border-top-style: ridge;
+    border-top-color: black;
+    color: white;
+}
+
+
+
+
+/*resets media screen*/
+
+/* default= mobile setting*/
+
+/* tablet setting*/
+@media only screen and (min-width:500px) {
+    header {
+        background-color: #FFF;
+    }
+
+    body {
+        background-color: whitesmoke;
+    }
+
+    #dumperimg {
+        width: 60%;
+        padding: 2%;
+        float: right;
+        clear: right;
+    }
+
+    #trumpimg {
+        width: 60%;
+        padding: 2%;
+        float: left;
+        clear: left;
+    }
+
+    #designskoleimg {
+        width: 60%;
+        padding: 2%;
+        float: right;
+        clear: right;
+    }
+
+    #logo2 {
+        max-width: 60px;
+    }
+
+    /* small desktop setting*/
+    @media only screen and (min-width:700px) {
+        header {
+            background-color: black;
+            height: 30px;
+        }
+
+        body {
+            background-color: white
+        }
+
+
+
+        #navigation-icon {
+            display: none;
+        }
+
+        #navigation-desktop {
+            display: block;
+            text-align: right;
+        }
+
+        #navigation-desktop li {
+            display: inline;
+
+        }
+
+        #navigation-desktop li a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 1.6em;
+            margin: 2%;
+            padding: 2%;
+
+        }
+
+        #navigation-desktop li a:hover {
+            text-decoration: underline;
+        }
+
+        #navigation-mobile {
+            display: none;
+        }
+
+        #logo {
+            max-height: 30px;
+            max-width: 130px;
+            float: left;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+        }
+
+
+
+        section {
+            padding: 2%;
+        }
+
+
+
+
+
+        .flex-container {
+            display: flex; flex-wrap: wrap;
+        }
+        
+      article {
+            width: 46%;
+            margin: 1%;}
+
+        #dumperimg {
+            width: 100%;
+            padding: 2%;
+            clear: left;
+            float: left;
+        }
+
+
+        #trumpimg {
+            float: right;
+        }
+
+        #designskole {width: 200%;}
+        
+    
+
+    }
+
+    /* desktop setting*/
+    @media only screen and (min-width:1100px) {
+        header {
+            background-color: black;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        #designskoleimg {}
+
+        #wrapper {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #logo {
+            width: 160px;
+            float: left;
+        }
+
+        #navigation-desktop li a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 1.5em;
+            padding: 2%;
+        }
+
+        .flex-container {
+            display: flex;
+            width: 100%;
+        }
+        
+        article {
+            width: 31%;
+            margin: 1%; display: block;}
+        
+        #designskole {width: 100%;}
+    }
